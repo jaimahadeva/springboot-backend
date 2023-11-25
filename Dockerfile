@@ -1,5 +1,6 @@
-FROM eclipse-temurin:17-jdk-aipine
-VOLUME /tmp
-COPY target/*.jar preptalksbackend.jar
-ENTRYPOINT ["java","-jar","preptalksbackend.jar"]
+
+FROM openjdk:11-jdk-slim
+COPY --from=build /target/demo-0.0.1-SNAPSHOT.jar demo.jar
+# ENV PORT=8080
 EXPOSE 8080
+ENTRYPOINT ["java","-jar","demo.jar"]
