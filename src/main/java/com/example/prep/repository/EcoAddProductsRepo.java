@@ -2,6 +2,7 @@ package com.example.prep.repository;
 
 import java.util.List;
 
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -24,6 +25,13 @@ public interface EcoAddProductsRepo extends CrudRepository<EcoProducts, Long>{
 			);
 	@Query(value="SELECT p from EcoProducts p WHERE p.productname LIKE %?1% ")
 	List<EcoProducts> findproductsBycategoryId(String productid);
+	
+	@Query(value="SELECT p from EcoProducts p WHERE p.category LIKE %?1% ")
+  public	List<EcoProducts> findproductsBycategoryIdNew(String category,Pageable pages);
+	
 
+//	@Query(value="SELECT p from EcoProducts p WHERE p.userid= :userid AND  p.productname= :productname")
+
+	 
 
 }

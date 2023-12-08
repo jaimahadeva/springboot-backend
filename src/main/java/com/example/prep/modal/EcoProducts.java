@@ -81,6 +81,8 @@ public class EcoProducts {
 	private  List<EcoProductImages> images;
 	
 	
+	
+	
 
 	public EcoProducts() {
 		
@@ -197,13 +199,13 @@ public class EcoProducts {
 
 
 	public String getStringproductid() {
-		return stringproductid;
+		return ""+productid;
 	}
 
 
 
-	public void setStringproductid(String stringproductid) {
-		this.stringproductid = stringproductid;
+	public void setStringproductid(String productid) {
+		this.stringproductid = productid;
 	}
 
 
@@ -452,7 +454,7 @@ public class EcoProducts {
 	public String toString() {
 		return "EcoProducts [productid=" + productid + ", userid=" + userid + ", productname=" + productname
 				+ ", desciption=" + desciption + ", oldprice=" + oldprice + ", newprice=" + newprice + ", discount="
-				+ discount + ", itemsLeft=" + itemsLeft + ", store=" + store + ", stringproductid=" + stringproductid
+				+ discount + ", itemsLeft=" + itemsLeft + ", store=" + store + ", stringproductid=" + productid
 				+ ", addtocart=" + addtocart + ", ratings=" + ratings + ", ratingsgiveby=" + ratingsgiveby
 				+ ", category=" + category + ", expecteddelivery=" + expecteddelivery + ", specialoffer=" + specialoffer
 				+ ", specialdesciption=" + specialdesciption + ", totalorders=" + totalorders + ", brandname="
@@ -481,7 +483,7 @@ public class EcoProducts {
 		this.discount = discount;
 		this.itemsLeft = itemsLeft;
 		this.store = store;
-		this.stringproductid = stringproductid;
+		this.stringproductid = ""+this.productid;
 		this.addtocart = addtocart;
 		this.ratings = ratings;
 		this.ratingsgiveby = ratingsgiveby;

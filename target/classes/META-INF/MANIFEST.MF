@@ -39,8 +39,7 @@ Class-Path: lib/spring-boot-starter-data-jpa-2.4.3.jar lib/spring-boot-s
 Implementation-Title: preptalksbackend
 Implementation-Version: 0.0.1-SNAPSHOT
 Implementation-Vendor-Id: com.example
-Implementation-URL: https://spring.io/projects/spring-boot/preptalksback
- end
+Implementation-URL: https://spring.io/projects/spring-boot/preptalkks
 Main-Class: com.example.prep.PreptalksbackendApplication
 Created-By: Maven Integration for Eclipse
 
